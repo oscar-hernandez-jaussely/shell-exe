@@ -6,7 +6,7 @@
 
 crontab -l > crontab_new
 
-echo "*/1 * * * * /home/user1/get_logs.sh" >> crontab_new
+echo "*/30 * * * * /home/user1/get_logs.sh" >> crontab_new
 crontab crontab_new
 
 rm crontab_new
